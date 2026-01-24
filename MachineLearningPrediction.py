@@ -74,7 +74,7 @@ RF_CLASS_WEIGHT = None
 ALLOW_MULTIPLICITY = False
 
 USE_GNN_PATIENT_UNIVERSE = True
-GNN_FOLDS_BASE = DAMAGE_ROOT / "_final_gnn_folds"
+GNN_FOLDS_BASE = DAMAGE_ROOT / "_full_no_film"
 
 OUTROOT = DAMAGE_ROOT / "baselines_lr_rf"
 OUTROOT.mkdir(parents=True, exist_ok=True)
