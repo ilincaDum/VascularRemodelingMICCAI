@@ -1,4 +1,4 @@
-# Pulmonary Vessel Damage Prediction (Graph-Based)
+# Pulmonary Vessel Damage Prediction (Graph-Based Approach)
 
 This repository contains the core scripts used in my MSc thesis pipeline for analyzing and predicting longitudinal pulmonary vasculature injury (arteries/veins) following radiotherapy 
 
