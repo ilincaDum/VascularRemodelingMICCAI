@@ -19,7 +19,7 @@ from scipy.spatial import cKDTree
 from scipy.optimize import linear_sum_assignment
 
 import matplotlib
-matplotlib.use("Agg")  # safe for headless runs
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
