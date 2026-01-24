@@ -40,7 +40,8 @@ ENABLE_QC = True
 FORCE_KEEP_ALL_PAIRS = False
 MATCH_FRAC_THRESHOLD = 0.75
 BAD_GRAPHS_PATIENT_EXCLUDE = 2
-REPORT_CSV = FLG / "_postmatch_reports" / "lobe_counts_and_quality.csv"
+
+REPORT_CSV = DAMAGE_ROOT / thr / "_postmatch_reports" / "lobe_counts_and_quality.csv"
 
 TEST_GROUP_SIZE = 1
 N_VAL_PATIENTS = 3
@@ -67,6 +68,8 @@ RF_LEAF_GRID = [3, 6]
 LR_MAX_ITER = 400
 RF_N_ESTIMATORS = 250
 
+LR_CLASS_WEIGHT = None
+RF_CLASS_WEIGHT = None
 
 ALLOW_MULTIPLICITY = False
 
