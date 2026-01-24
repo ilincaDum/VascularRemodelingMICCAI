@@ -1,21 +1,13 @@
-pathlib
-
-#DataProcessing & Math
-
 numpy
 pandas
 scipy
-
-#GraphGeometry 
-networkx
-
-#ML & Statistics 
-scikit-learn
-statsmodels
-
-#Deep Learning (GNN)
-torch
-
-#Visualization -
 matplotlib
-ipykernel
+seaborn
+scikit-learn
+networkx
+torch
+torch-geometric
+nibabel
+SimpleITK
+openpyxl
+tabulate
