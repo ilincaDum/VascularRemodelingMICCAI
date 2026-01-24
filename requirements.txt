@@ -1,0 +1,21 @@
+pathlib
+
+#DataProcessing & Math
+
+numpy
+pandas
+scipy
+
+#GraphGeometry 
+networkx
+
+#ML & Statistics 
+scikit-learn
+statsmodels
+
+#Deep Learning (GNN)
+torch
+
+#Visualization -
+matplotlib
+ipykernel
