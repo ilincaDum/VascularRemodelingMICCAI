@@ -64,7 +64,7 @@ Matches follow-up vessel segments to baseline and produces **analysis-ready labe
 
 ### `VasculatureVesselStatisticalAnalysis.ipynb`
 - Wilcoxon signed-rank to identify significant differences in normalized blood volume metrics across artery and vein data
-- Wilcoxon signed-rank to identify significant differences in vascular features (e.g., volume, tortuosity) across artery and vein data
+- Wilcoxon signed-rank to identify significant differences in vessel morphology (e.g., volume, tortuosity) across artery and vein data
 - Longitudinal Analysis Checking both Immediate and Long Term Changes
 
 ---
