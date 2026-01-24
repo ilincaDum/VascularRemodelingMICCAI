@@ -1,4 +1,4 @@
-# Pulmonary Vessel Damage Prediction (Graph-Based Approach)
+# Pulmonary Vessel Damage Prediction ( Graph-Based Approach)
 
 This repository contains the core scripts used in my MSc thesis pipeline for analyzing and predicting longitudinal pulmonary vasculature injury (arteries/veins) following radiotherapy 
 
@@ -16,7 +16,7 @@ The end-to-end workflow is:
 
 ## Pipeline Overview
 
-<img width="2078" height="1480" alt="Blank diagram (2)" src="https://github.com/user-attachments/assets/5cea55c6-1823-41c3-ae33-661934dff391" />
+<img width="900" height="800" alt="Blank diagram (2)" src="https://github.com/user-attachments/assets/5cea55c6-1823-41c3-ae33-661934dff391" />
 
 
 ---
@@ -29,8 +29,7 @@ CLI tool to sanitize **Central (label=0)** edges in GraphML vessel graphs by:
 - building a central-only subgraph filtered by a radius threshold
 - computing multi-source geodesic distances from anchor nodes
 - keeping central edges whose endpoints are in the reachable “core”
-- otherwise relabeling central edges to the nearest lobar cluster (same-side)
-- optionally dropping central edges that cannot be assigned
+- otherwise relabeling central edges to the nearest lobar cluster 
 
 **Outputs**
 - `central_sanitized.graphml`
@@ -84,6 +83,7 @@ Graph-based prediction using a **Line-Graph GNN**:
 - writes dose trend + dose calibration summaries
 
 ---
+
 
 ## Installation
 
