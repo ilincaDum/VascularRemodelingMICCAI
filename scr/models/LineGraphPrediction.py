@@ -46,7 +46,7 @@ batch_pairs_train = 4
 batch_pairs_eval  = 8
 use_torch_compile = True
 
-epochs = 20
+epochs = 50
 patience = 6
 lr_neural = 2e-3
 weight_decay = 1e-4
