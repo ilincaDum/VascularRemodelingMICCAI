@@ -17,7 +17,8 @@ The end-to-end workflow is:
 
 ## Pipeline Overview
 
-<img width="900" height="800" alt="Blank diagram (2)" src="https://github.com/user-attachments/assets/5cea55c6-1823-41c3-ae33-661934dff391" />
+
+<img width="2078" height="1470" alt="Blank diagram (5)" src="https://github.com/user-attachments/assets/a57d5d75-7836-4aaa-a9dc-04b00950996e" />
 
 
 ---
