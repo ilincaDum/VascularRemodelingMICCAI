@@ -79,11 +79,15 @@ Tabular baselines aligned with the GNN setup (patient-wise LOPO-style folds):
 
 ---
 
-### `VascularGraphPrediction.py`
-Graph-based prediction using a **Line-Graph GNN**:
-- runs per threshold and modality (Artery/Vein)
-- LOPO patient splits with an explicit validation set
-- writes dose trend and dose calibration summaries
+### `LineGraphPrediction.py`
+Graph-based prediction using a **Line-Graph GNN** under LOPO cross-validation:
+- Loads labeled GraphML baseline–follow-up pairs per damage threshold and modality (Artery/Vein)
+- Applies a matching quality check and excludes low-quality pairs
+- Builds a cached, capped line-graph representation per pair 
+- Trains two configurations (no-FiLM ablation and FiLM dose+time)
+- Writes fold + summary metrics and dose analyses:
+    - dose_damage_trend.csv (and Spearman correlation)
+    - per-config dose calibration curves from held-out predictions
 
 ---
 
