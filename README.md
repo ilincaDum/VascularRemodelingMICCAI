@@ -6,7 +6,7 @@ The end-to-end workflow is:
 
 1. **Input data**: CT images, segmentations (lobes, artery/vein, tumor) masks, RT dose map  
 2. **Pre-processing**: isotropic resampling, follow-up to baseline registration  
-3. **VesselVio graph creation & annotation**: skeletonize vessels, create graphs, sample dose along vessel segments, encode anatomy/dose  
+3. **VesselVio graph creation & annotation**: skeletonize vessels, create graphs, sample dose along vessel segments, encode anatomy/dose (open source script can be found here: https://github.com/JacobBumgarner/VesselVio_ 
 4. **Complete graphs**: per patient, modality (Artery/Vein), and timepoint  
 5. **Central label sanitization**: fix ambiguous lobe labels (`LobeSanitization.py`)  
 6. **Matching pipeline**: follow-up to baseline matching and label assignment (`MatchingPipeline.py`)  
