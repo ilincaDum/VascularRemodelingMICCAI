@@ -11,7 +11,7 @@ The end-to-end workflow is:
 5. **Central label sanitization**: fix ambiguous lobe labels (`LobeSanitization.py`)  
 6. **Matching pipeline**: follow-up to baseline matching and label assignment (`MatchingPipeline.py`)  
 7. **Analysis**: Statistical Tests
-8. **Prediction**: ML baselines + graph modeling
+8. **Prediction**: ML baselines + graph modeling (`MachineLearningPrediction.py`, `LineGraphPrediction.py`)
 
 ---
 
