@@ -10,15 +10,13 @@ The end-to-end workflow is:
 4. **Complete graphs**: per patient, modality (Artery/Vein), and timepoint  
 5. **Central label sanitization**: fix ambiguous lobe labels (`LobeSanitization.py`)  
 6. **Matching pipeline**: follow-up to baseline matching and label assignment (`MatchingPipeline.py`)  
-7. **Analysis**: Statistical Tests
-8. **Prediction**: ML baselines + graph modeling (`MachineLearningPrediction.py`, `LineGraphPrediction.py`)
+7. **Prediction**: ML baselines + graph modeling (`MachineLearningPrediction.py`, `LineGraphPrediction.py`)
 
 ---
 
 ## Pipeline Overview
 
-
-<img width="2078" height="1470" alt="Blank diagram (5)" src="https://github.com/user-attachments/assets/a57d5d75-7836-4aaa-a9dc-04b00950996e" />
+<img width="2780" height="1040" alt="_MethoDiagram (1)" src="https://github.com/user-attachments/assets/a68badc7-e2cf-4603-9343-4905a0cb2cac" />
 
 
 ---
