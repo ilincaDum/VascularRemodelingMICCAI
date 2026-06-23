@@ -704,9 +704,9 @@ def materialize_pair(rec, cfg,
 class WeightedFocalBCE(nn.Module):
     """
     Focal loss with:
-      - α (alpha) balancing positive vs. negative class (paper: α=0.75)
+      - α (alpha) balancing positive vs. negative class 
       - per-fold dynamic pos_weight as an additional minority scaling factor
-      - γ (gamma) focusing parameter (paper: γ=1.0)
+      - γ (gamma) focusing parameter 
     """
     def __init__(self, gamma: float = 0.0, alpha: float = 0.75):
         super().__init__()
@@ -766,7 +766,7 @@ def scatter_mean_edge(h_src: torch.Tensor, edge_index: torch.Tensor, E: int) -> 
 class ResidualGatedLineGraphGNN_FlexibleFiLM(nn.Module):
     """
     Residual gated line-graph GNN with optional FiLM conditioning.
-      - hid=128, rounds=2 (paper Section 2.3)
+      - hid=128, rounds=2 
       - FiLM scale=0.10, applied after each round when film_mode != 'none'
       - Gated blend of local and topology-aware logits
     """
