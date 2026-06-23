@@ -60,7 +60,7 @@ dropout      = 0.15
 hid          = 128
 rounds       = 2
 focal_gamma  = 1.0
-focal_alpha  = 0.75          # fixed α as stated in paper (Section 2.4)
+focal_alpha  = 0.75          
 earlystop_w_auc = 0.5
 earlystop_w_ap  = 0.5
 
@@ -698,13 +698,13 @@ def materialize_pair(rec, cfg,
             torch.from_numpy(Tok).float().to(device))
 
 # ---------------------------------------------------------------------------
-# Loss — Fixed α=0.75 as stated in paper (Section 2.4)
+# Loss 
 # ---------------------------------------------------------------------------
 
 class WeightedFocalBCE(nn.Module):
     """
     Focal loss with:
-      - fixed α (alpha) balancing positive vs. negative class (paper: α=0.75)
+      - α (alpha) balancing positive vs. negative class (paper: α=0.75)
       - per-fold dynamic pos_weight as an additional minority scaling factor
       - γ (gamma) focusing parameter (paper: γ=1.0)
     """
@@ -717,7 +717,7 @@ class WeightedFocalBCE(nn.Module):
                 pos_weight: torch.Tensor) -> torch.Tensor:
         bce = F.binary_cross_entropy_with_logits(logits, y, reduction="none")
 
-        # α weighting (fixed, per paper)
+      
         alpha_t = torch.where(y > 0.5,
                               torch.full_like(y, self.alpha),
                               torch.full_like(y, 1.0 - self.alpha))
@@ -904,7 +904,7 @@ def train_gnn(model, cache, train_keys, val_keys, pair_tensors, rep_seed: int):
             log(f"[torch.compile] skipped ({type(e).__name__}: {e})")
 
     opt   = torch.optim.AdamW(model.parameters(), lr=lr_neural, weight_decay=weight_decay)
-    # α=0.75 and γ=1.0 as stated in paper (Section 2.4)
+  
     crit  = WeightedFocalBCE(gamma=focal_gamma, alpha=focal_alpha)
     posw  = torch.tensor(
         compute_pos_weight_from_pairs(cache, train_keys),
