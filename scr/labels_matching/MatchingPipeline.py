@@ -49,8 +49,8 @@ HEAVY_RESCUE_RADIUS = 25.0
 HEAVY_LENGTH_TOL = 1.00
 MUTUAL_NEAREST_IN_RESCUE = True
 
-DMG_FEATURES = ["length", "radius_avg", "CSA_mm2", "volume_mm3", "surface_area", "tortuosity"]
-DMG_MODE = "decrease_only"  # keep as-is
+DMG_FEATURES = ["radius_avg"]
+DMG_MODE = "decrease_only" 
 
 #MATCH_FRAC_THRESHOLD = 0.75  
 
