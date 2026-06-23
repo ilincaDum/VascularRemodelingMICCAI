@@ -22,7 +22,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score, average_precision_score
 
 
-ROOT = Path(r"C:\Users\ilinc\OneDrive\Desktop\GraphAnalysis\GraphsCompleteAnalysis\graphs_complete_cleaned")
+ROOT = Path(os.environ.get("VASCULAR_DATA_ROOT", "./data"))
 FLG  = ROOT / "final_labeled_graphs"
 DAMAGE_ROOT = FLG / "damage_thresholds"
 
