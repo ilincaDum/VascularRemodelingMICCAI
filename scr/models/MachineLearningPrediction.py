@@ -1,6 +1,5 @@
 """
 CSV-only LR/RF baselines aligned with the GNN framework
-
 - Same logic and optional patient inclusion criteria as the GNN scripts
 - LOPO-style folds (train/val/test by patient)
 - No topology features used, only tabular version of the data
